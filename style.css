@@ -1,132 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body{
-  font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden !important;
 }
-
-header, .scoreSection, .score{
+header,
+.scoreSection,
+.score {
   text-align: center;
 }
-
-.options li, .scoreTxt, .score {
-  color: #18978F;
+.options li,
+.scoreTxt,
+.score {
+  color: #18978f;
 }
-
-header, .ques, .btn, .btn2{
+header,
+.ques,
+.btn,
+.btn2 {
   color: #fff;
 }
-
-header, .ques, .btn, .btn2{
-    background-color: #18978F;
+header,
+.ques,
+.btn,
+.btn2 {
+  background-color: #18978f;
 }
-
-.options li, .Question{
+.options li,
+.QuestionBox {
   font-size: 15px;
 }
-
-.options li, .ques{
+.options li,
+.ques {
   border-radius: 10px;
 }
-
-.btn, .btn2{
+.btn,
+.btn2 {
   border: none;
   border-radius: 20px;
   font-size: 18px;
   cursor: pointer;
   height: 40px;
   width: 130px;
-  margin-top: 5%;
 }
-
-header{
-    height: 100px;
-    width: 100%;
-    padding-top: 25px;
+header {
+  height: 100px;
+  width: 100vw;
+  padding-top: 25px;
 }
-
-.options li{
-  box-shadow: 1px 1px 1px 0px #18978F;
+.options li,
+.QuestionBox {
   width: 600px;
-  height: 50px;
-  border: 2px solid #18978F;
+}
+.options li,
+.ques {
   padding-left: 30px;
+}
+.options li {
+  box-shadow: 1px 1px 1px 0px #18978f;
+  height: 50px;
+  border: 2px solid #18978f;
   padding-top: 10px;
   margin-top: 10px;
 }
-
 input[type="radio"] {
   margin-right: 10px;
 }
-
-
-.Question{
-margin-top: 10%;
-width: 600px;
-margin-left: 35%;
-height: 400px;
+.QuestionBox {
+  height: 400px;
 }
-
-.options{
+.options,
+.btn,
+.btn2 {
   margin-top: 5%;
 }
-
-.ques{
-  padding-left: 30px;
+.ques {
   padding-top: 20px;
   margin-top: 8%;
   height: 70px;
-  font-weight: bold;
 }
-
-.btn{
+.btn {
   margin-left: 78%;
 }
-
-ul{
+ul {
   list-style: none;
 }
-
-.scoreSection{
+.scoreSection {
   visibility: hidden;
-  padding-top: 5%;
 }
-
-.score{
+.scoreSection,
+.QuestionBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.score,
+.ques {
   font-weight: bold;
 }
-
-@media (max-width: 1300px){
-  .Question{
-    margin-left: 13%;
-    margin-top: 30%;
+@media only screen and (max-width: 425px) {
+  html,
+  body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .QuestionBox,
+  .options li {
+    width: 400px;
+  }
+  .btn {
+    margin-left: 68%;
   }
 }
-
-@media (max-width: 550px){
-  .Question{
-  width: 350px;
-  margin-left: 45px;
+@media only screen and (max-width: 375px) {
+  .QuestionBox,
+  .options li {
+    width: 300px;
   }
-  .options li{
-    width: 350px;
-    padding-left: 20px;
-    padding-top: 5px;
-  }
-  .ques{
-      padding-top: 5px;
-  }
-  .btn{
-    margin-left:60%;
-  }
-  header{
-    width: 500px;
-    padding-right: 0px;
+  .btn {
+    margin-left: 58%;
   }
 }
